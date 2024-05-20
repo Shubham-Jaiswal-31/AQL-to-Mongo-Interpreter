@@ -1,0 +1,6 @@
+SELECT 	
+c/content/items/parts[at0000]/parts[at0001]/value/originalText/value 
+AS Problem  
+FROM EHR e 
+CONTAINS Composition c [CEN-EN13606-COMPOSITION.HCR_Fuenlabrada.v1] 
+WHERE 	e/subjectOfCare/extension = 'ANON_SERV_RSC:0000000791'

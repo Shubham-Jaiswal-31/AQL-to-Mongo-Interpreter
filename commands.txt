@@ -1,0 +1,7 @@
+antlr4 Aql.g4
+
+compile Aql*.java
+
+javac -cp antlr-4.7.2-complete.jar;. *.java
+
+java -cp antlr-4.7.2-complete.jar;. AqlInterpreter
